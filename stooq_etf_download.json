@@ -1,0 +1,168 @@
+{
+  "dataset_name": "Stooq daily ETF OHLCV",
+  "provider": "Stooq",
+  "official_url": "https://stooq.com/",
+  "access_date_utc": "2026-09-29T22:53:03Z",
+  "frequency": "daily",
+  "asset_universe": [
+    "spy.us",
+    "qqq.us",
+    "iwm.us",
+    "dia.us",
+    "xlf.us",
+    "xlk.us",
+    "xle.us",
+    "xlv.us",
+    "xli.us",
+    "xlp.us",
+    "xly.us",
+    "xlu.us",
+    "xlb.us",
+    "xlre.us"
+  ],
+  "licensing": "Check Stooq terms; for research use",
+  "suitability": "USABLE_WITH_TRANSFORM",
+  "survivorship_bias": "ETF panel \u2260 historical S&P 500 membership \u2014 LIMITATION",
+  "downloads": [
+    {
+      "url": "https://stooq.com/q/d/l/?s=spy.us&i=d",
+      "dest": "data/raw/stooq/spy_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:55Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "279d1374e9ad6513d9bf157e56da08449c9718547da0c90db87832e0fb95e395"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=qqq.us&i=d",
+      "dest": "data/raw/stooq/qqq_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:56Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "b8ceb55a5d86d47a5dd1ad02b9461d8bb9eb0c18c222ee354e508827e817eb7e"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=iwm.us&i=d",
+      "dest": "data/raw/stooq/iwm_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:57Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "c154e76542a27865e1cb549d66bc6c461f39c30e2f10e24705e8f1c37150b990"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=dia.us&i=d",
+      "dest": "data/raw/stooq/dia_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:57Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "ec0a2bc0f57e5bc66aeb5b53286ce4a14e739710b4bbaac16cbcbd831b12a64f"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xlf.us&i=d",
+      "dest": "data/raw/stooq/xlf_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:58Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "5d1b1588d321bb86d7a7c2b1ba829e2ecd72621464a9d4da0a9b33198d5efff2"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xlk.us&i=d",
+      "dest": "data/raw/stooq/xlk_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:58Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "54fd3f4c9a39663736b7ce7f84ced5976da405023f119f11e014d3528136de57"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xle.us&i=d",
+      "dest": "data/raw/stooq/xle_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:59Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "162c7c2a18865f0bb957db5846c14fe04f1b5d358446de9d7dbaa5892dd0ecbe"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xlv.us&i=d",
+      "dest": "data/raw/stooq/xlv_us_d.csv",
+      "access_date_utc": "2026-09-29T22:52:59Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "3aea92414d567c1b94e9ed5da8d7900bbdb075ab17e471b7112f0990b5283576"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xli.us&i=d",
+      "dest": "data/raw/stooq/xli_us_d.csv",
+      "access_date_utc": "2026-09-29T22:53:00Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "e3ac56cce2e0eaf40135a797e54e9ae21bb43c4f20b65a859921ad21f35f4522"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xlp.us&i=d",
+      "dest": "data/raw/stooq/xlp_us_d.csv",
+      "access_date_utc": "2026-09-29T22:53:00Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "6f45079d5a6aaea369606477de85fb7010aa522e1058655706d661026c6284ae"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xly.us&i=d",
+      "dest": "data/raw/stooq/xly_us_d.csv",
+      "access_date_utc": "2026-09-29T22:53:01Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "0f312d5ec9d1e3779f391ccc8aaea5ff470afc27c17ec8470352d81038c359cf"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xlu.us&i=d",
+      "dest": "data/raw/stooq/xlu_us_d.csv",
+      "access_date_utc": "2026-09-29T22:53:02Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "54fe6d78ed7af9b9acd5cd89dc6e98fb1922913d147bee10f7e7d9d42dad0fd8"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xlb.us&i=d",
+      "dest": "data/raw/stooq/xlb_us_d.csv",
+      "access_date_utc": "2026-09-29T22:53:02Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "2c41c3d3028fa5bf0b42c6da584312da09efe35bcbd7ca1f760630daecbaa054"
+    },
+    {
+      "url": "https://stooq.com/q/d/l/?s=xlre.us&i=d",
+      "dest": "data/raw/stooq/xlre_us_d.csv",
+      "access_date_utc": "2026-09-29T22:53:03Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 796,
+      "sha256": "543249cdcb00d58ca1440cfea1f348055d1430f8bb81610661741dcc2dfb7dd0"
+    }
+  ]
+}

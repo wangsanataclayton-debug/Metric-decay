@@ -1,0 +1,37 @@
+# Core data + numerics
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.3
+pyyaml>=6.0
+requests>=2.31
+tqdm>=4.66
+python-dateutil>=2.8
+pytz>=2024.1
+joblib>=1.3
+
+# Persistence / geometry (install what the environment allows)
+gudhi>=3.8; platform_system != "Windows" or python_version < "0"  # marker note: try plain gudhi below
+ripser>=0.6.4
+persim>=0.3.5
+POT>=0.9.3
+networkx>=3.1
+# Optional heavier stacks — documented as optional in README
+# giotto-tda>=0.6.0
+# GraphRicciCurvature>=0.5.3
+
+# IO / reporting
+matplotlib>=3.8
+seaborn>=0.13
+jinja2>=3.1
+openpyxl>=3.1
+lxml>=4.9
+beautifulsoup4>=4.12
+
+# Notebooks
+jupyter>=1.0
+ipykernel>=6.25
+
+# Equity download helpers (Yahoo/Stooq via pandas-datareader where available)
+yfinance>=0.2.40
+pandas-datareader>=0.10.0

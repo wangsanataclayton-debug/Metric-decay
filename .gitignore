@@ -1,0 +1,20 @@
+﻿__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+logs/
+*.log
+.ipynb_checkpoints/
+.DS_Store
+data/interim/
+# large regenerable panels (rebuild via src/data/build_processed.py)
+data/processed/*.csv
+data/processed/*.json
+# keep tiny processed metadata if added later via force-add
+data/raw/lobster/
+data/raw/stooq/
+data/raw/fi2010/extracted/
+data/raw/fi2010/*.zip
+data/raw/gdelt/*.zip
+data/raw/gdelt/*.gkg.csv.zip

@@ -1,0 +1,168 @@
+# Empirical pipeline configuration — Metric Decay of Financial Manifolds
+# No fabricated observations. Seeds apply only to null models / method-validation synthetics.
+
+project:
+  title: "The Metric Decay of Financial Manifolds: Topological Phase Transitions in Algorithmic Markets"
+  claim_standard: [FACT, EMPIRICAL_RESULT, ESTIMATE, INFERENCE, HYPOTHESIS, THEORETICAL_CLAIM, SYNTHETIC_RESULT, LIMITATION]
+  scientific_distinction:
+    curvature_object: discrete_ollivier_ricci
+    ricci_flow_implemented: false
+    sent_ai_policy: replace_with_observable_sentiment_or_omit
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  external: data/external
+  metadata: data/metadata
+  results: results
+  logs: logs
+
+random_seeds:
+  null_models: 42
+  subsampling: 42
+  landmark: 42
+  # SYNTHETIC / METHOD VALIDATION ONLY
+  synthetic_validation: 42
+
+timezone:
+  market_us: America/New_York
+  storage: UTC
+  documentation_note: "US equity sessions interpreted in America/New_York; FRED/FF dates are calendar dates without intraday TZ."
+
+sample:
+  # Broad daily panel windows spanning stress events (adjust after inventory)
+  daily_start: "2007-01-01"
+  daily_end: "2024-12-31"
+  # LOBSTER free samples are single-day (2012-06-21 historically for public samples — verify on download)
+  hf_probe_tickers: [AAPL, MSFT, INTC, AMZN, GOOG]
+  equity_etf_universe:
+    - SPY   # S&P 500
+    - QQQ   # Nasdaq-100
+    - IWM   # Russell 2000
+    - DIA   # Dow
+    - XLF   # Financials
+    - XLK   # Technology
+    - XLE   # Energy
+    - XLV   # Health Care
+    - XLI   # Industrials
+    - XLP   # Consumer Staples
+    - XLY   # Consumer Discretionary
+    - XLU   # Utilities
+    - XLB   # Materials
+    - XLRE  # Real Estate
+    - VIXY  # short-vol ETF proxy (use cautiously)
+  # Survivorship note: ETF panel is not historical S&P membership; CRSP/WRDS needed for true constituents.
+
+frequencies:
+  - tick
+  - 1s
+  - 5s
+  - 1min
+  - 5min
+  - 1d
+
+windows:
+  observations: [30, 60, 120, 240, 500]
+  default: 60
+
+knn:
+  values: [5, 7, 10, 15, 20]
+  default: 10
+
+homology:
+  max_dimension: 1
+  filtration: vietoris_rips
+  metric: euclidean
+  # H2 only if feature dim and n support it; default off for cost
+  enable_h2: false
+
+scaling:
+  methods: [minmax, zscore, robust]
+  default: zscore
+
+distance_metrics:
+  - euclidean
+  - correlation
+  - cosine
+  # mahalanobis only when cov is well-conditioned
+
+wasserstein:
+  order: 1
+  baseline_regime: calm_pre_event
+  compare_regimes: [calm, elevated_corr, stress]
+
+curvature:
+  object: ollivier_ricci_discrete
+  alpha: 0.5  # mass retained at node for neighbor measure
+  report:
+    - mean
+    - median
+    - q10
+    - variance
+    - frac_negative
+    - min
+    - concentration
+
+lead_lag:
+  tau_min: -500
+  tau_max: 500
+  # Units depend on sampling frequency; do not carry synthetic 220-tick claim into empirics.
+
+event_study:
+  relative_days: [-30, -20, -10, -5, 0, 5, 10, 20, 30]
+  normalize: zscore_pre_window
+
+events:
+  # Times are EST/EDT as documented in events/stress_events.json; verify against primary sources.
+  - id: flash_crash_2010
+    label: "6 May 2010 Flash Crash"
+    date: "2010-05-06"
+    suitability: high_if_lob_available
+  - id: quant_crisis_2007
+    label: "August 2007 Quant Dislocation"
+    date: "2007-08-06"
+    suitability: daily_cross_section_only
+  - id: volmageddon_2018
+    label: "February 2018 Volatility Shock"
+    date: "2018-02-05"
+    suitability: high_daily_vix
+  - id: covid_crash_2020
+    label: "March 2020 COVID Market Crash"
+    date: "2020-03-16"
+    suitability: high_daily
+  - id: repo_stress_2019
+    label: "September 2019 Treasury Repo Stress"
+    date: "2019-09-17"
+    suitability: rates_liquidity_focus
+  - id: meme_squeeze_2021
+    label: "January 2021 Meme-Stock / Short-Squeeze"
+    date: "2021-01-27"
+    suitability: idiosyncratic_not_marketwide
+
+computational:
+  subsample_max_points: 500
+  landmark_points: 100
+  cache_distances: true
+  n_jobs: -1
+  approximations_must_be_documented: true
+
+point_cloud:
+  constructions:
+    - name: asset_return_features
+      point_means: "one equity/ETF; features = rolling return moments + beta + volume z"
+    - name: lob_snapshot
+      point_means: "one LOB state vector (multi-level prices/sizes) at event time"
+    - name: rolling_market_state
+      point_means: "one temporal state of the market feature vector"
+    - name: institutional_portfolio
+      point_means: "one 13F manager weight vector (LOW-FREQUENCY PROXY)"
+  minimal_defensible_features:
+    directly_observable: [bid, ask, bid_size, ask_size, trade_price, volume]
+    derived: [spread, rel_spread, obi, mid, dmid, realized_vol, avg_pairwise_corr, pc1_share]
+    unavailable_without_paid_data: [full_depth_historical_us_stress_days, option_surface, ravenpack]
+    sentiment_policy: "Omit Sent_AI; optional GDELT tone as PROXY only if coverage validated."
+
+downloads:
+  overwrite_raw: false
+  access_date_timezone: UTC

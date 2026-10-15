@@ -1,0 +1,61 @@
+{
+  "dataset_name": "Kenneth French Data Library factors & industry portfolios",
+  "provider": "Kenneth R. French / Tuck Dartmouth",
+  "official_url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+  "access_date_utc": "2026-09-29T22:52:50Z",
+  "frequency": "daily/monthly",
+  "licensing": "Free for research; cite French Data Library",
+  "suitability": "DIRECTLY_USABLE",
+  "downloads": [
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_daily_CSV.zip",
+      "dest": "data/raw/fama_french/ff5_daily.zip",
+      "access_date_utc": "2026-09-29T22:52:47Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/x-zip-compressed",
+      "bytes": 150292,
+      "sha256": "7881223b51929ee0d6d23b8a28524aaec478a2c3d4eeca47224955cc845c5186"
+    },
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip",
+      "dest": "data/raw/fama_french/ff3_daily.zip",
+      "access_date_utc": "2026-09-29T22:52:48Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/x-zip-compressed",
+      "bytes": 178184,
+      "sha256": "2f29e22546069914890a712680a6f81f3680ebc3543b52864484d209ca13a7db"
+    },
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_daily_CSV.zip",
+      "dest": "data/raw/fama_french/mom_daily.zip",
+      "access_date_utc": "2026-09-29T22:52:49Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/x-zip-compressed",
+      "bytes": 85269,
+      "sha256": "ecf82b116e6ec56d2b79a2f27bd1d1598c217b5c6c25caa55b945bdd8a2c0b78"
+    },
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_CSV.zip",
+      "dest": "data/raw/fama_french/ff5_monthly.zip",
+      "access_date_utc": "2026-09-29T22:52:49Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/x-zip-compressed",
+      "bytes": 11964,
+      "sha256": "36756c5c2559648519ac4b22913d860c6afd865cfebce920e3e8927f8e2d10b7"
+    },
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/49_Industry_Portfolios_Daily_CSV.zip",
+      "dest": "data/raw/fama_french/ind49_daily.zip",
+      "access_date_utc": "2026-09-29T22:52:49Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/x-zip-compressed",
+      "bytes": 4173817,
+      "sha256": "8f394fe34bea54d41b9aafed410425ee8f8e252ede3c71a7c1cd20bab83040de"
+    }
+  ]
+}

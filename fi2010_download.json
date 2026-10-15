@@ -1,0 +1,36 @@
+{
+  "dataset_name": "FI-2010 Limit Order Book benchmark (via DeepLOB redistribution)",
+  "provider": "Ntakaris et al. (2018); mirrored in DeepLOB repo",
+  "official_url": "https://etsin.fairdata.fi/dataset/73eb48d7-4dbc-4a10-a52a-da745b47a649",
+  "download_url": "https://raw.githubusercontent.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books/master/data/data.zip",
+  "original_source": "NASDAQ Nordic / Helsinki equities LOB reconstruction",
+  "access_date_utc": "2026-09-29T23:46:29Z",
+  "frequency": "event-based LOB snapshots (10 levels)",
+  "period": "1\u201314 June 2010 (10 business days), 5 Finnish stocks",
+  "licensing": "Academic benchmark; cite Ntakaris et al. J Forecasting 2018",
+  "suitability": "DIRECTLY_USABLE for LOB topology method tests; NOT US stress-event days",
+  "limitation": "Nordic market June 2010 \u2014 proxy for LOB geometry, not US Flash Crash",
+  "download": {
+    "url": "https://raw.githubusercontent.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books/master/data/data.zip",
+    "dest": "data/raw/fi2010/deeplob_fi2010_data.zip",
+    "access_date_utc": "2026-09-29T23:46:07Z",
+    "status": "downloaded",
+    "http_status": 200,
+    "content_type": "application/zip",
+    "bytes": 56278154,
+    "sha256": "7a5564290a504bdc104dccaf44aa6c0b3857bf1db6b0517b9b88577c2def3e5f",
+    "extract_ok": true,
+    "extracted_files": [
+      "Test_Dst_NoAuction_DecPre_CF_7.txt",
+      "Test_Dst_NoAuction_DecPre_CF_9.txt",
+      "Test_Dst_NoAuction_DecPre_CF_8.txt",
+      "Train_Dst_NoAuction_DecPre_CF_7.txt"
+    ]
+  },
+  "extracted_files": [
+    "Test_Dst_NoAuction_DecPre_CF_7.txt",
+    "Test_Dst_NoAuction_DecPre_CF_9.txt",
+    "Test_Dst_NoAuction_DecPre_CF_8.txt",
+    "Train_Dst_NoAuction_DecPre_CF_7.txt"
+  ]
+}

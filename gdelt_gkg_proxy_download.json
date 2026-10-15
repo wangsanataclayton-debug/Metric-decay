@@ -1,0 +1,31 @@
+{
+  "dataset_name": "GDELT GKG tone (proxy for manuscript Sent_AI)",
+  "provider": "GDELT Project",
+  "official_url": "https://www.gdeltproject.org/",
+  "access_date_utc": "2026-09-29T23:48:36Z",
+  "suitability": "PROXY",
+  "conceptual_change": "Replace Sent_AI with GDELT average tone if coverage validated; else OMIT sentiment dimension",
+  "download_lastupdate": {
+    "url": "http://data.gdeltproject.org/gdeltv2/lastupdate.txt",
+    "dest": "data/raw/gdelt/lastupdate.txt",
+    "access_date_utc": "2026-09-29T23:48:35Z",
+    "status": "downloaded",
+    "http_status": 200,
+    "content_type": "text/plain",
+    "bytes": 320,
+    "sha256": "36ddf405e4b996e553353cbc02e89e9820d5462c10a46cd37c1f9f1fe37de2f0"
+  },
+  "downloads": [
+    {
+      "url": "http://data.gdeltproject.org/gdeltv2/20260929234500.gkg.csv.zip",
+      "dest": "data/raw/gdelt/20260929234500.gkg.csv.zip",
+      "access_date_utc": "2026-09-29T23:48:36Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 6086856,
+      "sha256": "42cdbb5bd20535525efdb82649a3a990db748fd3333d9b548af43e4206fb49e3"
+    }
+  ],
+  "note": "Not an AI-generated trading signal; media tone proxy only"
+}

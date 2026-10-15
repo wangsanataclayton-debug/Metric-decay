@@ -1,0 +1,70 @@
+{
+  "dataset_name": "LOBSTER free sample files",
+  "provider": "LOBSTER (NASDAQ TotalView-ITCH reconstruction)",
+  "official_url": "https://lobsterdata.com/info/DataSamples.php",
+  "access_date_utc": "2026-09-29T22:52:55Z",
+  "frequency": "event-time / nanosecond message + LOB snapshots",
+  "asset_universe": [
+    "AAPL",
+    "MSFT",
+    "INTC",
+    "AMZN",
+    "GOOG"
+  ],
+  "period": "single sample day (verify in zip readme; NOT stress-event days)",
+  "licensing": "Sample free; full data academic subscription + NASDAQ agreements",
+  "suitability": "DIRECTLY_USABLE for method validation on LOB geometry; INSUFFICIENT for event studies on stress dates",
+  "downloads": [
+    {
+      "url": "https://lobsterdata.com/info/Data/AAPL_10_levels.zip",
+      "dest": "data/raw/lobster/AAPL_L10.zip",
+      "access_date_utc": "2026-09-29T22:52:53Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 457,
+      "sha256": "3967668ba6d7b3ed9bc3a4173555252ac38bcdcbfbebea2fab8c1bd2a18a63cb"
+    },
+    {
+      "url": "https://lobsterdata.com/info/Data/MSFT_10_levels.zip",
+      "dest": "data/raw/lobster/MSFT_L10.zip",
+      "access_date_utc": "2026-09-29T22:52:54Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 457,
+      "sha256": "3967668ba6d7b3ed9bc3a4173555252ac38bcdcbfbebea2fab8c1bd2a18a63cb"
+    },
+    {
+      "url": "https://lobsterdata.com/info/Data/INTC_5_levels.zip",
+      "dest": "data/raw/lobster/INTC_L5.zip",
+      "access_date_utc": "2026-09-29T22:52:54Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 457,
+      "sha256": "3967668ba6d7b3ed9bc3a4173555252ac38bcdcbfbebea2fab8c1bd2a18a63cb"
+    },
+    {
+      "url": "https://lobsterdata.com/info/Data/AMZN_5_levels.zip",
+      "dest": "data/raw/lobster/AMZN_L5.zip",
+      "access_date_utc": "2026-09-29T22:52:55Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 457,
+      "sha256": "3967668ba6d7b3ed9bc3a4173555252ac38bcdcbfbebea2fab8c1bd2a18a63cb"
+    },
+    {
+      "url": "https://lobsterdata.com/info/Data/GOOG_5_levels.zip",
+      "dest": "data/raw/lobster/GOOG_L5.zip",
+      "access_date_utc": "2026-09-29T22:52:55Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 457,
+      "sha256": "3967668ba6d7b3ed9bc3a4173555252ac38bcdcbfbebea2fab8c1bd2a18a63cb"
+    }
+  ],
+  "limitation": "DATA NOT AVAILABLE freely for 2010-05-06 / 2020-03 / etc."
+}

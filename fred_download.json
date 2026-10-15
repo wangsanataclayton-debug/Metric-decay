@@ -1,0 +1,99 @@
+{
+  "dataset_name": "FRED market/stress/volatility series",
+  "provider": "Federal Reserve Bank of St. Louis (FRED); VIX via Cboe",
+  "official_url": "https://fred.stlouisfed.org/",
+  "access_date_utc": "2026-09-29T22:52:53Z",
+  "frequency": "daily (series-dependent)",
+  "licensing": "Cite FRED/Cboe; redistribution restrictions may apply to copyrighted series",
+  "suitability": "DIRECTLY_USABLE",
+  "downloads": [
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=VIXCLS",
+      "dest": "data/raw/fred/VIXCLS.csv",
+      "access_date_utc": "2026-09-29T22:52:50Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 161391,
+      "sha256": "4866f2856266eb8f46d81f252524d23a1617e7ee7795b05b55223b399bd2f8d4",
+      "label": "CBOE VIX"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500",
+      "dest": "data/raw/fred/SP500.csv",
+      "access_date_utc": "2026-09-29T22:52:51Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 48903,
+      "sha256": "ffc8417f7ae16cfb26f9b3c7a5d0cbcbe4b136d5a4b62a101bf7872e22a72df8",
+      "label": "S&P 500"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS",
+      "dest": "data/raw/fred/DTWEXBGS.csv",
+      "access_date_utc": "2026-09-29T22:52:51Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 104437,
+      "sha256": "fb8c1f47a32780978add3c2134ee89762bd3114d62c355ce9cb86701782e49ed",
+      "label": "Trade-weighted USD"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SOFR",
+      "dest": "data/raw/fred/SOFR.csv",
+      "access_date_utc": "2026-09-29T22:52:51Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 35082,
+      "sha256": "d12c895d3a5d216521a19f73de0cf660a843bdc1bfd902706493b79757704181",
+      "label": "SOFR"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=EFFR",
+      "dest": "data/raw/fred/EFFR.csv",
+      "access_date_utc": "2026-09-29T22:52:52Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 108526,
+      "sha256": "a5a69c708006df456fb50cefd0eba2affba95160ad6602cb6874b4c207cf3f27",
+      "label": "Effective Fed Funds"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TEDRATE",
+      "dest": "data/raw/fred/TEDRATE.csv",
+      "access_date_utc": "2026-09-29T22:52:52Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 148321,
+      "sha256": "291d6007c287e3a1a56fff7879dcfa5aaa44620bc0a68cb2ab8ccf032795c99d",
+      "label": "TED spread (discontinued segments possible)"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NFCI",
+      "dest": "data/raw/fred/NFCI.csv",
+      "access_date_utc": "2026-09-29T22:52:52Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 51497,
+      "sha256": "552210df7477451570100967ad1cda95558a67a7d1b562fa612c14a7eaa5870d",
+      "label": "Chicago Fed NFCI"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=STLFSI4",
+      "dest": "data/raw/fred/STLFSI4.csv",
+      "access_date_utc": "2026-09-29T22:52:53Z",
+      "status": "downloaded",
+      "http_status": 200,
+      "content_type": "application/csv",
+      "bytes": 31871,
+      "sha256": "445db3eaf024e28fc75627f56635bc7a9f7c685b3d88236e40943e67fe4a4dcc",
+      "label": "St Louis Financial Stress Index"
+    }
+  ]
+}

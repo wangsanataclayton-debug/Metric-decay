@@ -1,0 +1,124 @@
+{
+  "dataset_name": "Yahoo Finance daily ETF/equity OHLCV via yfinance",
+  "provider": "Yahoo Finance (via yfinance)",
+  "official_url": "https://finance.yahoo.com/",
+  "access_date_utc": "2026-09-29T22:55:16Z",
+  "frequency": "daily",
+  "suitability": "USABLE_WITH_TRANSFORM",
+  "survivorship_bias": "ETF/names panel; not CRSP historical constituents",
+  "files": [
+    {
+      "ticker": "SPY",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 430243
+    },
+    {
+      "ticker": "QQQ",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 427610
+    },
+    {
+      "ticker": "IWM",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 428357
+    },
+    {
+      "ticker": "DIA",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 423263
+    },
+    {
+      "ticker": "XLF",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 429942
+    },
+    {
+      "ticker": "XLK",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 426567
+    },
+    {
+      "ticker": "XLE",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 431675
+    },
+    {
+      "ticker": "XLV",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 424811
+    },
+    {
+      "ticker": "XLI",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 424157
+    },
+    {
+      "ticker": "XLP",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 424337
+    },
+    {
+      "ticker": "XLY",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 424598
+    },
+    {
+      "ticker": "XLU",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 430071
+    },
+    {
+      "ticker": "XLB",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 429675
+    },
+    {
+      "ticker": "XLRE",
+      "rows": 2323,
+      "start": "2015-10-08",
+      "end": "2024-12-31",
+      "bytes": 217384
+    },
+    {
+      "ticker": "GME",
+      "rows": 4530,
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "bytes": 417497
+    },
+    {
+      "ticker": "AMC",
+      "rows": 2777,
+      "start": "2013-12-18",
+      "end": "2024-12-31",
+      "bytes": 245740
+    }
+  ],
+  "note": "Stooq blocked by JS challenge; Yahoo used as Tier-3 substitute"
+}
