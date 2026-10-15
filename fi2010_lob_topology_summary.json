@@ -1,0 +1,8 @@
+{
+  "claim": "EMPIRICAL RESULT",
+  "market": "NASDAQ Nordic FI-2010",
+  "limitation": "Not US stress-event days; LOB geometry method test only",
+  "n_windows": 31,
+  "orc_mean_avg": 0.27634441113475294,
+  "tp_h1_avg": 2.6524154332376297
+}

@@ -1,0 +1,10 @@
+{
+  "n_points": 200,
+  "dim": 40,
+  "claim": "EMPIRICAL RESULT on FI-2010 Nordic LOB",
+  "tp_h0": 359.12622043304145,
+  "tp_h1": 13.360639572143555,
+  "backend": "ripser",
+  "orc_mean": 0.260020904160321,
+  "orc_frac_negative": 0.0
+}

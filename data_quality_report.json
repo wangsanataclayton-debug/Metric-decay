@@ -1,0 +1,116 @@
+{
+  "generated_utc": "2026-09-29T23:35:06.318824+00:00",
+  "datasets": {
+    "ind49": {
+      "rows": 26317,
+      "cols": 49,
+      "start": "1926-07-01",
+      "end": "2026-08-31",
+      "missing_frac": 0.052150662294024264,
+      "duplicate_index": 0,
+      "neg99_style_missing_replaced": true
+    },
+    "ff5_daily": {
+      "rows": 15897,
+      "cols": 6,
+      "start": "1963-07-01",
+      "end": "2026-08-31",
+      "missing_frac": 0.0,
+      "duplicate_index": 0
+    },
+    "yahoo_etf": {
+      "rows": 4530,
+      "tickers": [
+        "AMC",
+        "DIA",
+        "GME",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "XLB",
+        "XLE",
+        "XLF",
+        "XLI",
+        "XLK",
+        "XLP",
+        "XLRE",
+        "XLU",
+        "XLV",
+        "XLY"
+      ],
+      "start": "2007-01-03",
+      "end": "2024-12-31",
+      "missing_frac_prices": 0.054635761589403975,
+      "impossible_nonpositive_prices": 0,
+      "duplicate_index": 0
+    },
+    "fred_DTWEXBGS": {
+      "rows": 5410,
+      "start": "2006-01-02",
+      "end": "2026-09-25",
+      "missing_frac": 0.039186691312384475
+    },
+    "fred_EFFR": {
+      "rows": 6846,
+      "start": "2000-07-03",
+      "end": "2026-09-28",
+      "missing_frac": 0.03768624014022787
+    },
+    "fred_NFCI": {
+      "rows": 2907,
+      "start": "1971-01-08",
+      "end": "2026-09-18",
+      "missing_frac": 0.0
+    },
+    "fred_SOFR": {
+      "rows": 2215,
+      "start": "2018-04-03",
+      "end": "2026-09-28",
+      "missing_frac": 0.04288939051918736
+    },
+    "fred_SP500": {
+      "rows": 2608,
+      "start": "2016-09-29",
+      "end": "2026-09-28",
+      "missing_frac": 0.03680981595092025
+    },
+    "fred_STLFSI4": {
+      "rows": 1708,
+      "start": "1993-12-31",
+      "end": "2026-09-18",
+      "missing_frac": 0.0
+    },
+    "fred_TEDRATE": {
+      "rows": 9407,
+      "start": "1986-01-02",
+      "end": "2022-01-21",
+      "missing_frac": 0.058892314234081006
+    },
+    "fred_VIXCLS": {
+      "rows": 9585,
+      "start": "1990-01-02",
+      "end": "2026-09-28",
+      "missing_frac": 0.0315075639019301
+    },
+    "ind49_dependence_w60": {
+      "rows": 4471,
+      "start": "2007-03-29",
+      "end": "2024-12-31"
+    },
+    "lobster_attempt": {
+      "files": 5,
+      "status": "INSUFFICIENT \u2014 HTML stubs not LOB data",
+      "bytes": [
+        457,
+        457,
+        457,
+        457,
+        457
+      ]
+    },
+    "stooq_attempt": {
+      "files": 14,
+      "status": "INSUFFICIENT \u2014 JS challenge HTML"
+    }
+  }
+}
